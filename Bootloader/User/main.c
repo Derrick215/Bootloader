@@ -10,8 +10,6 @@
 uint8_t KeyNum;
 uint8_t RxData;
 
-
-
 int main(void)
 {
 	uint32_t applenth = 0;
@@ -45,7 +43,7 @@ int main(void)
 		
 		switch(KeyNum)
 		{
-			case 1:
+			case 1:						//B1按下，跳转到app程序执行
 			{
 				Serial_Printf("flash_APP addr :%x \r\n",(*(volatile uint32_t *)(FLASH_APP1_ADDR + 4)) & 0xFF00F000);
                 
@@ -62,7 +60,7 @@ int main(void)
                 }
 				break;
 			}
-			case 2:
+			case 2:							//B11按下，从SRAM(0x20001000)更新程序到Flash指定位置(0x08008000)
 			{
 				Serial_Printf("开始更新固件...\r\n");
 				Serial_Printf("Copying APP2FLASH...\r\n");
@@ -79,6 +77,6 @@ int main(void)
 				}
 			}
 		}
-		Delay_ms(100);
+		Delay_ms(100);			//必须有，因为超循环频率比串口快，保证lastcount更新比Serial_RxData_CNT慢。
 	}
 }

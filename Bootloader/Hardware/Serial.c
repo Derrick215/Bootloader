@@ -122,7 +122,7 @@ uint8_t Serial_GetRxData(void)
 	return Serial_RxData;
 }
 
-void USART1_IRQHandler(void)
+void USART1_IRQHandler(void)				//串口中断接收app程序
 {
 	if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
 	{

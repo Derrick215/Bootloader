@@ -20,8 +20,8 @@ void iap_write_appbin(uint32_t appxaddr, uint8_t *appbuf, uint32_t appsize)
 	uint8_t *dfu = appbuf;
 	uint32_t fwaddr = appxaddr; /* 当前写入的地址 */
 	
-	MyFlash_EraseAPPPage();
-	for(uint32_t i = 0; i < appsize; i += 2)
+	MyFlash_EraseAPPPage();							//flash_app存储段擦除
+	for(uint32_t i = 0; i < appsize; i += 2)		//每两个字节写入
 	{
 		temp = (uint16_t)dfu[1] << 8;
         temp |= (uint16_t)dfu[0];
