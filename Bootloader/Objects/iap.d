@@ -30,3 +30,6 @@
 .\objects\iap.o: .\Library\misc.h
 .\objects\iap.o: System\sys.h
 .\objects\iap.o: System\IAP.h
+.\objects\iap.o: .\Hardware\MyFlash.h
+.\objects\iap.o: .\Hardware\Serial.h
+.\objects\iap.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

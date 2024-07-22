@@ -583,6 +583,26 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Serial.h</FilePath>
             </File>
+            <File>
+              <FileName>MyFlash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\MyFlash.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyFlash.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\MyFlash.h</FilePath>
+            </File>
+            <File>
+              <FileName>Store.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Store.c</FilePath>
+            </File>
+            <File>
+              <FileName>Store.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Store.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

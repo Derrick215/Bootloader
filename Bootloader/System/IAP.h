@@ -8,5 +8,6 @@ typedef void (*iapfun)(void);                   /* 定义一个函数类型的参数 */
                                                  */
 
 void iap_load_app(uint32_t appxaddr);
-
+void iap_write_appbin(uint32_t appxaddr, uint8_t *appbuf, uint32_t appsize);
+	
 #endif

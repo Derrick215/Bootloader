@@ -1,7 +1,7 @@
-#ifndef __KEY_H
-#define __KEY_H
+#ifndef __KEY_H__
+#define __KEY_H__
 
 void Key_Init(void);
-uint8_t Key_GetNum(void);
+uint8_t GetKeyNum(void);
 
 #endif

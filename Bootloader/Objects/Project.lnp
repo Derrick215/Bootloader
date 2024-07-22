@@ -17,6 +17,8 @@
 ".\objects\key.o"
 ".\objects\oled.o"
 ".\objects\serial.o"
+".\objects\myflash.o"
+".\objects\store.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 --strict --scatter ".\Objects\Project.sct"
