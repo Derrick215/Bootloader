@@ -11,6 +11,8 @@
 ".\objects\stm32f10x_tim.o"
 ".\objects\stm32f10x_usart.o"
 ".\objects\delay.o"
+".\objects\iap.o"
+".\objects\sys.o"
 ".\objects\led.o"
 ".\objects\key.o"
 ".\objects\oled.o"

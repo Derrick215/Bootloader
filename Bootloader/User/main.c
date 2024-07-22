@@ -4,6 +4,7 @@
 #include "Key.h"
 #include "OLED.h"
 #include "Serial.h"
+#include "IAP.h"
 
 uint8_t KeyNum;
 uint8_t RxData;
@@ -20,11 +21,19 @@ int main(void)
 
 	while (1)
 	{
-		if (Serial_GetRxFlag() == 1)
+//		if (Serial_GetRxFlag() == 1)
+//		{
+//			RxData = Serial_GetRxData();
+//			Serial_SendByte(RxData);
+//			OLED_ShowHexNum(1, 8, RxData, 2);
+//		}
+		KeyNum = Key_GetNum();
+		if(KeyNum == 1)
 		{
-			RxData = Serial_GetRxData();
-			Serial_SendByte(RxData);
-			OLED_ShowHexNum(1, 8, RxData, 2);
+			Serial_Printf("IAP_Load_APP!\r\n");
+			Delay_ms(10);
+			iap_load_app(0x08008000);
 		}
+		
 	}
 }

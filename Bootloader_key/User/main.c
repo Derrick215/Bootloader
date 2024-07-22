@@ -10,7 +10,7 @@ uint8_t KeyNum;
 
 int main(void)
 {
-	sys_nvic_set_vector_table(FLASH_BASE,0x08000);
+	sys_nvic_set_vector_table(FLASH_BASE,0x8000);
 	LED_Init();
 	Key_Init();
 	OLED_Init();

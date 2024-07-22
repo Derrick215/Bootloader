@@ -28,11 +28,3 @@
 .\objects\sys.o: .\Library\stm32f10x_usart.h
 .\objects\sys.o: .\Library\stm32f10x_wwdg.h
 .\objects\sys.o: .\Library\misc.h
-.\objects\sys.o: System\sys.h
-.\objects\sys.o: .\User\stm32f10x_it.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
